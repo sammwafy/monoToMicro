@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run : docker login -u sammehmwafy -p @Sameh1994
+    - run : docker login -u samehmwafy -p @Sameh1994
     - run: docker-compose -f docker-compose-build.yaml build --parallel
     - run: docker tag udagram-frontend:local samehmwafy/udagram-frontend:v1
     - run: docker tag udagram-api-user samehmwafy/udagram-api-user:v1
