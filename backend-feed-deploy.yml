@@ -25,7 +25,13 @@ spec:
         - name: backend-feed
 
           image: samehmwafy/udagram-api-feed:v1
-
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
           ports:
             - containerPort: 8080
           envFrom:
